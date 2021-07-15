@@ -1,4 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import "../src/assets/style/reset.scss";
 
-createApp(App).mount("#app");
+const app = createApp(App);
+app.config.devtools = true;
+app.mount("#app");
